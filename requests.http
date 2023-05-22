@@ -1,0 +1,8 @@
+###Create order
+POST http://localhost:8080/paypal/checkout?sum=10
+Content-Type: application/json
+Origin: http://localhost:8080
+
+####Finish order(use the params from your url in browser
+POST http://localhost:8080/paypal/capture?token=YOUR_TOKEN&PayerID=YOUR_PAYER_ID
+Content-Type: application/json

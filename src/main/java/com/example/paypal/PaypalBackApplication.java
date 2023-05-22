@@ -1,9 +1,11 @@
-package com.example.paypalback;
+package com.example.paypal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 
 @SpringBootApplication
+@ConfigurationPropertiesScan
 public class PaypalBackApplication {
 
 	public static void main(String[] args) {
