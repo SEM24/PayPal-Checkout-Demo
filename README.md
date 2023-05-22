@@ -34,6 +34,7 @@ Now you can launch the server(default port is 8080).
 ## Explanation of Requests
 POST http://localhost:8080/paypal/checkout?sum=10
 * This Request Method requires "sum" (the amount of money to pay). Origin in headers(to find the way to redirect, helps to work with frontend).
+
 POST http://localhost:8080/paypal/capture?token=YOUR_TOKEN&PayerID=YOUR_PAYER_ID 
 * This Request Method requires paresed token from URL that you get after success order creation. token - order_id of your payment, PayerID - id of your paypal account.
 Request examples can be found in the project core.
